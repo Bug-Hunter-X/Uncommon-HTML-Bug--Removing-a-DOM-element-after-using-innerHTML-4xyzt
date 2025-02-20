@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in HTML related to DOM manipulation.  The bug arises from attempting to remove a DOM element that has already been effectively removed using `innerHTML = ''`. The solution provides a safer approach to ensure correct element removal.
