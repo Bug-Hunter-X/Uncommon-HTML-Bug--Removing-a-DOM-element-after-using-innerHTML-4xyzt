@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+
+  <script>
+    const myDiv = document.getElementById('myDiv');
+    if (myDiv) { //Check if the element exists before attempting to remove it.
+      myDiv.remove(); //Correct approach to remove the element
+    }
+  </script>
+</body>
+</html>
