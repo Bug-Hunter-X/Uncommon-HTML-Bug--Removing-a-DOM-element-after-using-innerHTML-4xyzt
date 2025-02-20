@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+
+  <script>
+    // Incorrectly using innerHTML to remove an element. 
+    // innerHTML should only modify the content of an element, not remove it from the DOM
+    document.getElementById('myDiv').innerHTML = '';
+    //Attempting to remove a non-existent element after it was removed using innerHTML
+    document.getElementById('myDiv').remove();
+  </script>
+</body>
+</html>
